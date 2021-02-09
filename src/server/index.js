@@ -1,9 +1,13 @@
 const express = require('express');
 const os = require('os');
 const axios = require('axios');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
+app.use(cors({
+    origin: "http://localhost:3000"
+}));
 
 app.use(express.static('dist'));
 app.use( bodyParser.json() );
