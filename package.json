@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.3",
     "json-server": "^0.16.3",
+    "lodash": "^4.17.20",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",

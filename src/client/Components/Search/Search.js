@@ -18,8 +18,11 @@ export default class Search extends Component {
   }
 
   render() {
+    const { loading } = this.state;
+    const { results } = this.props;
+
     return (
-      <SemanticSearch />
+      <SemanticSearch loading={loading} onSearchChange={this.onChange} results={results} />
     );
   }
 }

@@ -10,7 +10,7 @@ export default class ProductList extends Component {
     return(
       <Card.Group>
         {products.map(product => (
-          <Product product={product} />
+          <Product product={product} key={product.id}/>
         ))}
       </Card.Group>
     );
